@@ -241,3 +241,92 @@ To remove symlinks later(if required):
 ```bash
 stow -D .
 ```
+
+---
+
+## On new Arch + Hyprland Installation
+
+### Install the essential dependencies:
+
+```bash
+sudo pacman -S git stow networkmanager \
+pipewire pipewire-pulse wireplumber \
+hyprland waybar swaync rofi kitty konsole neovim \
+hyprpaper waypaper \
+zsh starship \
+bluez bluez-utils bluetui \
+pavucontrol playerctl \
+grim slurp wl-clipboard \
+nemo firefox hyprpolkitagent \
+btop htop \
+ttf-jetbrains-mono-nerd
+```
+
+Then:
+
+```bash
+git clone https://github.com:Ved-031/dotfiles.git ~/dotfiles
+cd ~/dotfiles
+stow .
+```
+
+Then install the AUR cursor:
+
+```bash
+paru -S bibata-cursor-theme-bin
+```
+
+Enable services:
+
+```bash
+sudo systemctl enable --now NetworkManager
+sudo systemctl enable --now bluetooth
+```
+
+Then log into Hyprland.
+
+### Install all the dependencies mentioned inside pkglist.txt
+
+```bash
+sudo pacman -S --needed - < ~/dotfiles/pkglist.txt
+```
+
+**However:** don't blindly install a package list containing packages that only exist on your current machine without checking it first.
+
+### Install AUR packages (after installing PARU)
+
+```bash
+paru -S --needed - < ~/dotfiles/aur-pkglist.txt
+```
+
+### Wallpapers
+
+Wallpapers should be placed at this location only:
+
+```bash
+mkdir -p ~/Pictures/wallpapers
+```
+
+### Complete workflow
+
+1. Install Arch
+   ↓
+2. Install Hyprland
+   ↓
+3. Install Git + Stow
+   ↓
+4. Clone dotfiles
+   ↓
+5. Install package list
+   ↓
+6. Install AUR packages
+   ↓
+7. stow .
+   ↓
+8. Enable required services
+   ↓
+9. Install/copy wallpapers
+   ↓
+10. Log into Hyprland
+    ↓
+    🎉 Your setup is restored/completed
