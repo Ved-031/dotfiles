@@ -1,0 +1,117 @@
+@import 'colors.css';
+
+/* ╭──────────────────────────────────────────────╮
+   │              POWER MENU                      │
+   │            CATPPUCCIN MOCHA                  │
+   ╰──────────────────────────────────────────────╯ */
+
+/* Remove GTK default focus/hover outlines */
+menu,
+menu menuitem,
+menu menuitem:hover,
+menu menuitem:focus,
+menu menuitem:selected {
+  outline: none;
+  box-shadow: none;
+}
+
+menu {
+  background-color: #1e1e2e;
+
+  border: 1px solid #45475a;
+  border-radius: 12px;
+
+  padding: 6px;
+  margin-top: 8px;
+
+  box-shadow:
+    0 12px 35px rgba(0, 0, 0, 0.45);
+}
+
+
+/* ───────────────────────────────────────────── */
+/* Menu Items                                   */
+/* ───────────────────────────────────────────── */
+
+menu menuitem {
+  background-color: transparent;
+  color: #cdd6f4;
+
+  border: none;
+  outline: none;
+  box-shadow: none;
+
+  border-radius: 8px;
+
+  min-width: 150px;
+
+  padding: 9px 12px;
+  margin: 2px 0;
+
+  font-family: "JetBrains Mono Nerd Font Propo";
+  font-size: 13px;
+}
+
+menu menuitem:hover,
+menu menuitem:focus,
+menu menuitem:selected,
+menu menuitem:active {
+  outline: none;
+  box-shadow: none;
+}
+
+/* ───────────────────────────────────────────── */
+/* Separator                                    */
+/* ───────────────────────────────────────────── */
+
+menu separator {
+  background-color: #45475a;
+
+  min-height: 1px;
+
+  margin: 6px 8px;
+}
+
+
+/* ───────────────────────────────────────────── */
+/* Shutdown                                    */
+/* ───────────────────────────────────────────── */
+
+menu menuitem:first-child {
+  color: #f38ba8;
+}
+
+menu menuitem:first-child:hover {
+  background-color: #f38ba8;
+  color: #11111b;
+}
+
+
+/* ───────────────────────────────────────────── */
+/* Reboot                                      */
+/* ───────────────────────────────────────────── */
+
+menu menuitem:nth-child(2):hover {
+  background-color: #89b4fa;
+  color: #11111b;
+}
+
+
+/* ───────────────────────────────────────────── */
+/* Suspend                                     */
+/* ───────────────────────────────────────────── */
+
+menu menuitem:nth-child(4):hover {
+  background-color: #cba6f7;
+  color: #11111b;
+}
+
+
+/* ───────────────────────────────────────────── */
+/* Hibernate                                   */
+/* ───────────────────────────────────────────── */
+
+menu menuitem:nth-child(5):hover {
+  background-color: #89dceb;
+  color: #11111b;
+}
