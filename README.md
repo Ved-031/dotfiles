@@ -150,6 +150,32 @@ paru -S bibata-cursor-theme-bin
 sudo pacman -S hyprpolkitagent
 ```
 
+### Download all dependencies
+
+```bash
+sudo pacman -S git stow networkmanager pipewire pipewire-pulse wireplumber waybar swaync rofi ttf-jetbrains-mono-nerd zsh starship neovim ripgrep fd fzf unzip curl bluez bluez-utils bluetui playerctl grim slurp wl-clipboard nemo firefox btop htop hyprpolkitagent
+```
+
+And
+
+```bash
+paru -S bibata-cursor-theme-bin
+```
+
+Then:
+
+```bash
+sudo systemctl enable --now NetworkManager bluetooth
+```
+
+```bash
+chsh -s /usr/bin/zsh
+```
+
+```bash
+mkdir -p ~/Pictures/Screenshots
+```
+
 ---
 
 ## 📁 Structure
