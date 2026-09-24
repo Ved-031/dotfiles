@@ -51,7 +51,10 @@ dotfiles/
 ## Installation
 
 1. Install `git` and `stow`
-   `sudo pacman -S git stow`
+
+```bash
+sudo pacman -S git stow
+```
 
 2. Clone this repository
    `git clone git@github.com:Ved-031/dotfiles.git ~/dotfiles`
