@@ -48,6 +48,8 @@ dotfiles/
 └── README.md
 ```
 
+---
+
 ## 🚀 Installation
 
 1. Install `git` and `stow`
@@ -79,6 +81,8 @@ cd ~/dotfiles
 ```bash
 stow .
 ```
+
+---
 
 ## ⚠️ Notes
 
