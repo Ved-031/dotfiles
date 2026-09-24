@@ -56,16 +56,30 @@ dotfiles/
 sudo pacman -S git stow
 ```
 
+OR
+
+```bash
+yay -S git stow
+```
+
 2. Clone this repository
-   `git clone git@github.com:Ved-031/dotfiles.git ~/dotfiles`
-   Or using HTTPS:
-   `git clone https://github.com/Ved-031/dotfiles.git ~/dotfiles`
+
+```bash
+git clone https://github.com/Ved-031/dotfiles.git ~/dotfiles
+```
 
 3. Enter the directory
-   `cd ~/dotfiles`
+
+```bash
+cd ~/dotfiles
+```
 
 4. Stow the configurations
-   For example:
-   `stow .`
-   For individual files/configurations, use:
-   `stow zsh`
+
+```bash
+stow .
+```
+
+```
+
+```
