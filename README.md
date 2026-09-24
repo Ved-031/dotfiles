@@ -33,34 +33,31 @@ This repository contains my configurations for shell, terminal, editor, Hyprland
 These dotfiles are designed for an **Arch Linux + Hyprland** setup.
 Before applying this dotfiles, make sure you have a working Hyprland environment and the required applications installed.
 
-Install the basic dependencies:
+1. Install the basic dependencies:
 
 ```bash
 sudo pacman -S git stow networkmanager pipewire pipewire-pulse wireplumber
 ```
 
-Enable NetworkManager:
+2. Enable NetworkManager:
 
 ```bash
 sudo systemctl enable --now NetworkManager
 ```
 
-Waybar:
-It is used as the system status bar
+3. Waybar:
 
 ```bash
 sudo pacman -S waybar
 ```
 
-Swaync:
-It is used as the notification daemon and control center.
+4. Swaync:
 
 ```bash
 sudo pacman -S swaync
 ```
 
-Rofi:
-It is used as the application launcher and command runner.
+5. Rofi:
 
 ```bash
 sudo pacman -S rofi
@@ -68,20 +65,14 @@ sudo pacman -S rofi
 
 The launcher uses theme from:
 https://github.com/adi1090x/rofi
-Current theme:
 
-```bash
-Type 3
-Style 4
-```
-
-Fonts:
+6. Fonts:
 
 ```bash
 sudo pacman -S ttf-jetbrains-mono-nerd
 ```
 
-Zsh & Starship
+7. Zsh & Starship
 
 ```bash
 sudo pacman -S zsh starship
@@ -93,7 +84,7 @@ Set zsh as the default shell:
 chsh -s /usr/bin/zsh
 ```
 
-Neovim:
+8. Neovim:
 
 ```bash
 sudo pacman -S neovim
@@ -105,7 +96,7 @@ Some neovim plugins may also require:
 sudo pacman -S ripgrep fd fzf unzip curl
 ```
 
-Bluetooth:
+9. Bluetooth:
 
 ```bash
 sudo pacman -S bluez bluez-utils bluetui
@@ -117,13 +108,13 @@ Enable bluetooth:
 sudo systemctl enable --now bluetooth
 ```
 
-Audio:
+10. Audio:
 
 ```bash
 sudo pacman -S playerctl
 ```
 
-Screenshots:
+11. Screenshots:
 
 ```bash
 sudo pacman -S grim slurp wl-clipboard
@@ -135,25 +126,25 @@ Create the screenshot directory:
 mkdir -p ~/Pictures/Screenshots
 ```
 
-File Manager & Browser
+12. File Manager & Browser
 
 ```bash
 sudo pacman -S nemo firefox
 ```
 
-System Utilities
+13. System Utilities
 
 ```bash
 sudo pacman -S btop htop
 ```
 
-Cursor Theme
+14. Cursor Theme
 
 ```bash
 paru -S bibata-cursor-theme-bin
 ```
 
-Authentication Agent
+15. Authentication Agent
 
 ```bash
 sudo pacman -S hyprpolkitagent
